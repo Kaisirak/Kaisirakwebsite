@@ -2,6 +2,10 @@
 	width: 300px;
 }
 
+body {
+ font-size: 11pt;
+}
+
 .box-title {
 	font-weight: bold;
 }
@@ -27,7 +31,7 @@ button {
 
 .resume-name > h1 {
 	font-family: Amaranth, sans-serif;
-	font-size: 24px;
+	font-size: 18pt;
 	font-weight: bold;
 	margin: 0px;
 }
