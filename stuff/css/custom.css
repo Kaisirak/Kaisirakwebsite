@@ -1,0 +1,128 @@
+.box-skills {
+	width: 300px;
+}
+
+.box-title {
+	font-weight: bold;
+}
+
+.input-long {
+	width: 200px;
+	display: inline-block;
+}
+
+button {
+	max-width: 80px;
+	margin: 0px 5px 0px 5px;
+}
+
+.resume-header {
+	padding-top: 10px;
+}
+
+.resume-name {
+	vertical-align: top;
+	width: 78%;
+}
+
+.resume-name > h1 {
+	font-family: Amaranth, sans-serif;
+	font-size: 24px;
+	font-weight: bold;
+	margin: 0px;
+}
+
+.resume-mail, .resume-phone, .resume-website {
+	font-weight: bold;
+}
+
+.resume-list-title {
+	text-decoration: underline;
+	font-weight: bold;
+	font-style: italic;
+}
+
+.resume-table-title {
+	vertical-align: text-top;
+	font-size: 16px;
+	font-weight: bold;
+	color: #3ae;
+	min-width: 150px;
+}
+
+.resume-table-content {
+	width: 100%;
+}
+
+.resume-company, .resume-school {
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.resume-company-title {
+	font-style: italic;
+	margin-left: 5px;
+	color: #444;
+}
+
+.resume-school-diploma {
+	font-style: italic;
+	margin-left: 5px;
+	color: #444;
+}
+
+.resume-company-loc, .resume-school-loc {
+	margin-left: 10px;
+}
+
+.resume-company-date, .resume-company-loc, .resume-school-status, .resume-school-loc {
+	color: #BBB;
+	font-size: 12px;
+}
+
+.resume-company-role-desc {
+	margin: 0px 3px 5px 3px;
+}
+
+.resume-company-info, .resume-school-info {
+	margin: 0px 2px 0px 2px;
+}
+
+.resume-skill-heading {
+	padding-right: 15px;
+	font-weight: bold;
+	width: 180px;
+	vertical-align: top;
+}
+
+.resume-skill-row {
+	height: 40px;
+}
+
+.resume-skill-row td {
+	padding: 8px;
+}
+
+.resume-skill-btn {
+	display: inline-block;
+	padding: 6px 12px;
+	margin: 2px;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.42857143;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	background-image: none;
+	border: 1px solid transparent;
+	border-radius: 4px;
+	
+	color: #444;
+	background-color: #fff;
+	border-color: #ccc;
+}
+
+.resume-section {
+	border-top: 1px dotted #333;
+	padding: 10px 5px 10px 5px;
+}
