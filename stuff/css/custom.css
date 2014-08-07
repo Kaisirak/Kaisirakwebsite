@@ -52,6 +52,8 @@ button {
 	font-weight: bold;
 	color: #3ae;
 	min-width: 150px;
+	position: relative;
+	top: -10px;
 }
 
 .resume-table-content {
