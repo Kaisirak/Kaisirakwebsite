@@ -12,7 +12,7 @@
 					<div class="modal-body">
 						<h2>{{item.name}}</h2>
 						<hr class="star-primary">
-						<img ng-repeat="allimg in item.img" src="img/portfolio/{{allimg}}" class="img-responsive img-centered img-shadow" alt="">
+						<img ng-repeat="allimg in item.img" ng-src="img/portfolio/{{allimg}}" class="img-responsive img-centered img-shadow" alt="">
 						<p>{{item.desc}}</p>
 						<ul class="list-inline item-details">
 							<li ng-repeat="info in item.infos"><span ng-bind="info.title"></span> : <strong><span ng-bind-html="portfolioCtrl.toTrusted(info.value)"></span></strong></li>
