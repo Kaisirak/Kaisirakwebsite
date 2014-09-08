@@ -1,0 +1,26 @@
+<div ng-repeat="item in portfolioCtrl.items" class="portfolio-modal modal fade" id="portfolioModal{{$index}}" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal-content">
+		<div class="close-modal" data-dismiss="modal">
+			<div class="lr">
+				<div class="rl">
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2">
+					<div class="modal-body">
+						<h2>{{item.name}}</h2>
+						<hr class="star-primary">
+						<img ng-repeat="allimg in item.img" src="img/portfolio/{{allimg}}" class="img-responsive img-centered img-shadow" alt="">
+						<p>{{item.desc}}</p>
+						<ul class="list-inline item-details">
+							<li ng-repeat="info in item.infos"><span ng-bind="info.title"></span> : <strong><span ng-bind-html="portfolioCtrl.toTrusted(info.value)"></span></strong></li>
+						</ul>
+						<button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
