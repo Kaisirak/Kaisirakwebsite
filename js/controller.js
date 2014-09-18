@@ -32,9 +32,13 @@
     		return $sce.trustAsHtml(html_code);
 		};
 		
+		this.checklel = function() {
+			console.log($scope.itemOpacity);
+		};
+		
 		angular.element(document).ready(function () {
 			console.log("BEFORE");
-			setTimeout(function(){$scope.itemOpacity = {'opacity': 1}; console.log($scope.itemOpacity); $scope.$apply();}, 5000);
+			setTimeout(function(){$scope.itemOpacity = {'opacity': 1}; console.log($scope.itemOpacity);}, 5000);
 		});
 		
 	}]);
