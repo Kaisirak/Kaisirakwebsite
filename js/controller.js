@@ -38,7 +38,7 @@
 		
 		angular.element(document).ready(function () {
 			console.log("BEFORE");
-			setTimeout(function(){$scope.itemOpacity = {'opacity': 1}; $scope.checklel();}, 5000);
+			$timeout(function(){$scope.itemOpacity = {'opacity': 1}; $scope.checklel();}, 5000);
 		});
 		
 	}]);
