@@ -35,6 +35,9 @@
 		
 		angular.element(document).ready(function () {
 			console.log("hey yooo");
+			console.log($scope);
+			console.log($scope.itemOpacity);
+			
 			$scope.itemOpacity = 1;
 		});
 		
