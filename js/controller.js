@@ -34,10 +34,8 @@
 		$scope = this;
 		
 		angular.element(document).ready(function () {
-			console.log("hey yooo");
-			console.log($scope);
-			$scope.itemOpacity = 1;
-			console.log($scope.itemOpacity);
+			console.log("BEFORE");
+			setTimeout(function(){$scope.itemOpacity = 1; console.log("DONE");}, 5000);
 		});
 		
 	}]);
