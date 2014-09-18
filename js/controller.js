@@ -1,7 +1,7 @@
 (function(){
 	var app = angular.module('main-app', ['ngAnimate']);
 	
-	app.controller('PortfolioController', ['$scope', '$sce', function($scope, $sce) {
+	app.controller('PortfolioController', ['$scope', '$sce', '$timeout', function($scope, $sce, $timeout) {
 		$scope = this;
 		this.itemOpacity = {'opacity': 0};
 		this.items = [	{nameshort: "GB Jam", name: "GameBoy Jam", desc: "This prototype was made as part of a GB Jam, mimicking the style of Zelda - Link's Awakening", img: ['protogb2x.png'], infos: [{title: 'Game Engine', value: '<a href="https://www.scirra.com/construct2">Construct 2</a>'}, {title: 'Date', value: 'August 2014'}, {title: 'Service', value: '<a href="http://jams.gamejolt.io/gbjam3">GB Jam</a>'}]},
