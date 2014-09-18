@@ -1,5 +1,5 @@
 <div ng-repeat="item in portfolioCtrl.items" class="col-sm-4 portfolio-item">
-	<a href="#portfolioModal{{$index}}" class="portfolio-link" ng-style="{'opacity': portfolioCtrl.itemOpacity}" style="background-image: url('img/portfolio/{{item.img[0]}}')" data-toggle="modal">
+	<a href="#portfolioModal{{$index}}" class="portfolio-link" ng-style="{'opacity': 'portfolioCtrl.itemOpacity'}" style="background-image: url('img/portfolio/{{item.img[0]}}')" data-toggle="modal">
 		<div class="caption">
 			<div class="caption-content">
 				<i class="fa fa-chevron-right"></i> {{item.nameshort}}
