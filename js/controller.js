@@ -35,7 +35,7 @@
 		
 		angular.element(document).ready(function () {
 			console.log("BEFORE");
-			setTimeout(function(){$scope.itemOpacity = 1; console.log("DONE");}, 5000);
+			setTimeout(function(){$scope.itemOpacity = 1; console.log("DONE"); $scope.itemOpacity;}, 5000);
 		});
 		
 	}]);
