@@ -53,6 +53,11 @@ hr.star-primary {
     text-align: center;
 }
 
+.portfolio-link {
+	transition: all 0.5s ease-in-out;
+	opacity: 0;
+}
+
 hr.star-light:after,
 hr.star-primary:after {
     content: "\f005";
