@@ -34,7 +34,7 @@
 		
 		angular.element(document).ready(function () {
 			console.log("BEFORE");
-			setTimeout(function(){$scope.itemOpacity = {'opacity': 1}; console.log("DONEZO");}, 5000);
+			setTimeout(function(){$scope.itemOpacity = {'opacity': 1}; console.log($scope.itemOpacity); $scope.$apply();}, 5000);
 		});
 		
 	}]);
