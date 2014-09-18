@@ -2,6 +2,7 @@
 	var app = angular.module('main-app', ['ngAnimate']);
 	
 	app.controller('PortfolioController', ['$scope', '$sce', function($scope, $sce) {
+		this.itemOpacity = 0;
 		this.items = [	{nameshort: "GB Jam", name: "GameBoy Jam", desc: "This prototype was made as part of a GB Jam, mimicking the style of Zelda - Link's Awakening", img: ['protogb2x.png'], infos: [{title: 'Game Engine', value: '<a href="https://www.scirra.com/construct2">Construct 2</a>'}, {title: 'Date', value: 'August 2014'}, {title: 'Service', value: '<a href="http://jams.gamejolt.io/gbjam3">GB Jam</a>'}]},
 						{nameshort: "Ludum Dare 27", name: "Ludum Dare 27 Prototype - 10 seconds", desc: "This game prototype was made as a solo entry for the LD 27, a simple action platformer with proceduraly generated rooms and enemies, with multiple classes", img: ['gamescreen.png', 'menuscreen.png'], infos: [{title: 'Game Engine', value: '<a href="https://www.scirra.com/construct2">Construct 2</a>'}, {title: 'Date', value: 'August 2013'}, {title: 'Service', value: '<a href="http://www.ludumdare.com/compo/">Ludum Dare</a>'}]},
 						{nameshort: "Ludum Dare 28", name: "Ludum Dare 28 Prototype - You only get one", desc: 'This game prototype was made as a solo entry for the LD 28, it\'s a point and click type of game with a crafting mechanic, focused on exploration and proceduraly generated rooms, where you only have one life', img: ['LD28screen.png'], infos: [{title: 'Game Engine', value: '<a href="https://www.scirra.com/construct2">Construct 2</a>'}, {title: 'Date', value: 'December 2013'}, {title: 'Service', value: '<a href="http://www.ludumdare.com/compo/">Ludum Dare</a>'}]},
@@ -29,6 +30,10 @@
 		this.toTrusted = function(html_code) {
     		return $sce.trustAsHtml(html_code);
 		};
+		
+		angular.element(document).ready(function () {
+			this.itemOpacity = 1;
+		});
 		
 	}]);
 	
