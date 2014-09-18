@@ -31,8 +31,11 @@
     		return $sce.trustAsHtml(html_code);
 		};
 		
+		$scope = this;
+		
 		angular.element(document).ready(function () {
-			this.itemOpacity = 1;
+			console.log("hey yooo");
+			$scope.itemOpacity = 1;
 		});
 		
 	}]);
