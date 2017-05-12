@@ -24,3 +24,12 @@ $(function() {
 $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
 });
+
+$(document).ready(function(){
+    console.log("henlo");
+   $(window.location.hash).modal('show');
+   $(".portfolio-link").click(function(){
+        console.log("clack");
+      window.location.hash = $(this).attr('href');
+   });
+});
