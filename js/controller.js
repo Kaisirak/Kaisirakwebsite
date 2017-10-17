@@ -35,7 +35,7 @@
 		};
 		
 		this.checklel = function() {
-			console.log($scope.itemOpacity);
+			;
 		};
 		
 		angular.element(document).ready(function () {
